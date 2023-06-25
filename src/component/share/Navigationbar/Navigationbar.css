@@ -1,0 +1,34 @@
+header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  header.scrolled {
+    background-color: #333; /* Change the background color when scrolled */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
