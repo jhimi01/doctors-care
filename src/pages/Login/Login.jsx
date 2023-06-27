@@ -1,19 +1,39 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import loginsvg from '../../../public/login.svg'
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { FcGoogle } from 'react-icons/fc';
 import { useForm } from 'react-hook-form';
+import { AuthContext } from '../../providers/AuthProvider';
 
 
 const Login = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-
+    const { loginWithEmail, logingoogle } = useContext(AuthContext)
+    const [error, setError] = useState('')
 
     const onSubmit = data => {
-        console.log(data)
+        console.log(data.email)
+        loginWithEmail(data.email, data.password)
+        .then(result => {
+            const userlogin = result.user;
+            console.log(userlogin)
+            setError('')
+        }).catch(err => {
+            setError(err.message)
+        })
     };
 
+    const handleGoogle =()=>{
+        logingoogle()
+        .then(result => {
+            const userlogin = result.user;
+            console.log(userlogin)
+            setError('')
+        }).catch(err => {
+            setError(err.message)
+        })
+    }
 
     return (
        
@@ -43,14 +63,15 @@ const Login = () => {
                   <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                 </label>
               </div>
-              <div className="form-control mt-6">
+              <div className="form-control">
                 <button type="submit" className="btn bg-[#407bff] text-white hover:bg-[#618dec]">Login</button>
+              {error && <span className="text-red-500 text-xs">{error}</span>}
               </div>
               <Link to='/signup'><p className='text-[#407bff] text-sm underline'>Are you new here? signup</p></Link>
             </form>
           
             <div className='divider'>or</div>
-          <button className='btn rounded-none'>Signin with Google <FcGoogle className='text-2xl'/></button>
+          <button className='btn rounded-none' onClick={handleGoogle}>Signin with Google <FcGoogle className='text-2xl'/></button>
           </div>
         </div>
       </div>
