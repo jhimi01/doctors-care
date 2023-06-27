@@ -22,8 +22,11 @@ const Navigationbar = () => {
 
     const Navigation = () => (
       <>
-        <NavLink to='/'><li><a>Home</a></li></NavLink>
-        <NavLink>  <li tabIndex={0}>
+        <NavLink to='/'
+          className={({ isActive, isPending }) =>  isActive ? "text-[#f59a66]" : ""
+                    }><li><a>Home</a></li></NavLink>
+        <NavLink to='/service' className={({ isActive, isPending }) =>  isActive ? "text-[#f59a66]" : ""
+                    }><li tabIndex={0}>
           <details>
             <summary>Service</summary>
             <ul className="p-2 flex flex-col">
@@ -32,7 +35,8 @@ const Navigationbar = () => {
             </ul>
           </details>
         </li></NavLink>
-        <NavLink> <li><a>Blog</a></li></NavLink>
+        <NavLink to='/service' className={({ isActive, isPending }) =>  isActive ? "text-[#f59a66]" : ""
+                    }> <li><a>Blog</a></li></NavLink>
       </>
     );
 
