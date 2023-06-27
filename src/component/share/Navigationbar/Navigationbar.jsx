@@ -6,7 +6,7 @@ import { AuthContext } from '../../../providers/AuthProvider';
 
 const Navigationbar = () => {
     const [scrolled, setScrolled] = useState(false);
-    const { user } = useContext(AuthContext)
+    const { user,logout } = useContext(AuthContext)
 console.log(user?.photoURL)
     useEffect(() => {
       const handleScroll = () => {
@@ -19,6 +19,15 @@ console.log(user?.photoURL)
         window.removeEventListener('scroll', handleScroll);
       };
     }, []);
+
+    // log out
+    const handleLogout =()=>{
+      logout()
+      .then(()=>{})
+      .catch(err => {
+        console.log(err.message)
+      })
+    }
 
     const Navigation = () => (
       <>
@@ -98,7 +107,7 @@ console.log(user?.photoURL)
           </a>
         </li>
         <li><a>Settings</a></li>
-       <button><li><a>Logout</a></li></button>
+       <button onClick={handleLogout}><li><a>Logout</a></li></button>
       </ul>
     </div> : <Link to='/login' className='custom-btn'> <li><a>LogIn</a></li></Link>}
   </div>
