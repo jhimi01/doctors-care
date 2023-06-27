@@ -13,7 +13,7 @@ const Home = () => {
 
 
    <Helmet>
-    <title>home | Doctor Care</title>
+    <title>Doctor Care</title>
    </Helmet>
         <div className="hero h-[100vh] md:mt-0 mt-20" style={{ backgroundImage: `url(${bg})` }}>
       <div className="md:hero-content">

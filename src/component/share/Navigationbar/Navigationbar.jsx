@@ -62,7 +62,11 @@ const Navigationbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-  <div className="items-center flex">
+  <div className="items-center flex md:gap-3">
+    <div className='hidden md:block'>
+      <p className='text-[#6163a1] font-bold'>Help Center</p>
+      <p className='font-semibold text-indigo-950'>+8801756****1</p>
+    </div>
     <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle">
         <div className="indicator">
