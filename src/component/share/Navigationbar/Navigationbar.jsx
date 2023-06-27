@@ -1,9 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import './Navigationbar.css'
 import { FaStethoscope } from 'react-icons/fa';
+import { Link, NavLink } from 'react-router-dom';
+import { AuthContext } from '../../../providers/AuthProvider';
 
 const Navigationbar = () => {
     const [scrolled, setScrolled] = useState(false);
+    const { user } = useContext(AuthContext)
 
     useEffect(() => {
       const handleScroll = () => {
@@ -16,6 +19,23 @@ const Navigationbar = () => {
         window.removeEventListener('scroll', handleScroll);
       };
     }, []);
+
+    const Navigation = () => (
+      <>
+        <NavLink to='/'><li><a>Home</a></li></NavLink>
+        <NavLink>  <li tabIndex={0}>
+          <details>
+            <summary>Service</summary>
+            <ul className="p-2 flex flex-col">
+              <li><a>Service</a></li>
+              <li><a>Service details</a></li>
+            </ul>
+          </details>
+        </li></NavLink>
+        <NavLink> <li><a>Blog</a></li></NavLink>
+      </>
+    );
+
     return (
         <header 
         className={scrolled ? 'scrolled' : ''}
@@ -27,38 +47,18 @@ const Navigationbar = () => {
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-      <li><a>Home</a></li>
-      <li tabIndex={0}>
-        <details>
-          <summary>Service</summary>
-          <ul className="p-2 flex flex-col">
-            <li><a>Service</a></li>
-            <li><a>Service details</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a>Blog</a></li>
+      <Navigation />
       </ul>
     </div>
     <a className="text-2xl flex items-center gap-2 font-bold text-[#1f2278]"><FaStethoscope className='text-3xl'/> DoctorCare</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 font-bold text-[#6163a1]">
-      <li><a>Home</a></li>
-      <li tabIndex={0}>
-        <details>
-          <summary>Service</summary>
-          <ul className="p-2 flex flex-col">
-            <li><a>Service</a></li>
-            <li><a>Service details</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a>Blog</a></li>
+  <Navigation />
     </ul>
   </div>
   <div className="navbar-end">
-  <div className="flex-none">
+  <div className="items-center flex">
     <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle">
         <div className="indicator">
@@ -76,7 +76,7 @@ const Navigationbar = () => {
         </div>
       </div>
     </div>
-    <div className="dropdown dropdown-end">
+    { user? <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
           <img src="https://i.ibb.co/crQnZhh/pexels-mohamed-abdelghaffar-1698730.jpg" />
@@ -90,9 +90,9 @@ const Navigationbar = () => {
           </a>
         </li>
         <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
+       <button><li><a>Logout</a></li></button>
       </ul>
-    </div>
+    </div> : <Link to='/login' className='custom-btn'> <li><a>LogIn</a></li></Link>}
   </div>
   </div>
 </div>

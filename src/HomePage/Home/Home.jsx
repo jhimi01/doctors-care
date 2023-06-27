@@ -5,6 +5,7 @@ import doctor from '../../assets/womendoctor.png';
 import AboutUs from '../AboutUs/AboutUs';
 import prop1 from '../../assets/Props/prop1.png'
 import prop10 from '../../assets/Props/prop10.png'
+import './Home.css'
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
       <div className="md:hero-content">
         <div className="md:w-1/2 w-full mx-auto md:space-y-3 space-y-1">
         <h4 className='md:text-2xl text-xl font-semibold text-[#565acf]'>We Provide All Health Care Solution</h4>
-        <h2 className='md:text-5xl text-3xl font-bold text-[#1f2278]'>Protect Your Health And Take Care To Of Your Health !</h2>
+        <h2 className='md:text-5xl text-3xl font-bold text-[#1f2278]'>Your Health Is Our Responsibilty!</h2>
         <button className='text-xl p-3 rounded-md bg-[#5559ce] text-white hover:bg-[#6d6fb8]'>Read More</button>
         </div>
         <div className="md:w-[40%] w-full mx-auto text-black">
