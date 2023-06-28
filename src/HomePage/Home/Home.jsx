@@ -15,7 +15,7 @@ const Home = () => {
    <Helmet>
     <title>Doctor Care</title>
    </Helmet>
-        <div className="hero h-[100vh] md:mt-0 mt-20" style={{ backgroundImage: `url(${bg})` }}>
+        <div className="hero h-[100vh]" style={{ backgroundImage: `url(${bg})` }}>
       <div className="md:hero-content">
         <div className="md:w-1/2 w-full mx-auto">
         <h4 className='md:text-2xl text-xl font-semibold text-[#565acf]'>We Provide All Health Care Solution</h4>

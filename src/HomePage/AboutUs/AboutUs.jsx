@@ -5,22 +5,22 @@ import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <div className="relative">
-      <div className="grid md:grid-cols-2 grid-cols-1">
+    <div className="relative md:w-5/6 w-full md:px-0 px-3 mx-auto">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
         <div className="grid grid-cols-2">
-          <img
+          <img className="w-full h-full" style={{borderBottomLeftRadius: '50px', borderBottomRightRadius: '50px', borderTopRightRadius:'50px'}}
             src="https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
           />
-          <img
+          <img className="w-full h-full" style={{borderBottomLeftRadius: '50px', borderBottomRightRadius: '50px', borderTopLeftRadius:'50px'}}
             src="https://images.pexels.com/photos/11756843/pexels-photo-11756843.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
           />
-          <img
+          <img className="w-full h-full" style={{borderBottomRightRadius: '50px', borderTopLeftRadius:'50px', borderTopRightRadius:'50px' }}
             src="https://images.pexels.com/photos/3279209/pexels-photo-3279209.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
           />
-          <img
+          <img className="w-full h-full" style={{ borderTopLeftRadius:'50px', borderTopRightRadius:'50px', borderBottomLeftRadius: '50px', }}
             src="https://images.pexels.com/photos/3779705/pexels-photo-3779705.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
           />

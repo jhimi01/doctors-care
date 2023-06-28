@@ -5,16 +5,39 @@ import { Helmet } from 'react-helmet';
 import { FcGoogle } from 'react-icons/fc';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../providers/AuthProvider';
+import { key } from 'localforage';
 
 const Signup = () => {
     const { register, handleSubmit, watch, formState: { errors }, reset  } = useForm();
-    const { signupEmail, logingoogle } = useContext(AuthContext)
+    const { signupEmail, logingoogle, updateUserProfile } = useContext(AuthContext)
     const [error, setError] = useState('')
  
     
-    const onSubmit = data => {
-        console.log(data)
-        signupEmail(data.email, data.password)
+    const onSubmit = async data => {
+      const {name, email, password, image} = data
+        console.log(data.image)
+
+        // create a FormData onject and append the image file
+        const formData = new FormData();
+        formData.append('image', image[0]);
+        // make a post request to Imgbb api
+        try{
+          const response = await fetch('https://api.imgbb.com/1/upload', {
+            method: 'POST',
+            body: formData,
+            headers: {
+              key: import.meta.env.VITE_IMGBB_API_KEY,
+            }
+          })
+          const result = await response.json();
+        }catch (error) {
+          setLoading(false);
+          console.log(error.message);
+          toast.error(error.message);
+        }
+        
+
+        signupEmail(email, password)
         .then(result => {
             const userlogin = result.user;
             console.log(userlogin)
@@ -65,7 +88,7 @@ const Signup = () => {
               <label className="label">
                 <span className="label-text">Photo URL</span>
               </label>
-              <input type="file" placeholder="photo URL" className="input input-bordered" {...register("photoURL")} />
+              <input type="file" placeholder="photo URL" className="input input-bordered"  accept='image/*' {...register("image")} />
             </div>
             {/* password input field */}
               <div className="form-control">
@@ -74,9 +97,6 @@ const Signup = () => {
                 </label>
                 <input type="password" placeholder="password" className="input input-bordered" {...register("password", { required: true })} />
                 {errors.password && <span className='text-red-500'>This field is required</span>}
-                <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                </label>
               </div>
               <div className="form-control mt-6">
                 <button className="btn bg-[#ff725e] hover:bg-[#e98f83] text-white">Sign up</button>
