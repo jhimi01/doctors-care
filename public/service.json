@@ -5,7 +5,8 @@
         "serviceDetails": "Specialized in diagnosing and treating heart diseases.",
         "doctors": {
           "name": "Dr. John Smith",
-          "mobile": "+1234567890"
+          "mobile": "+1234567890",
+          "image": "path/to/doctor1.jpg"
         },
         "socialLinks": [
           {
@@ -24,7 +25,8 @@
         "serviceDetails": "Specialized in treating musculoskeletal conditions and injuries.",
         "doctors": {
           "name": "Dr. Michael Brown",
-          "mobile": "+2345678901"
+          "mobile": "+2345678901",
+          "image": "path/to/doctor2.jpg"
         },
         "socialLinks": [
           {
@@ -43,7 +45,8 @@
         "serviceDetails": "Specialized in diagnosing and treating skin conditions.",
         "doctors": {
           "name": "Dr. Emily Johnson",
-          "mobile": "+9876543210"
+          "mobile": "+9876543210",
+          "image": "path/to/doctor3.jpg"
         },
         "socialLinks": [
           {
@@ -62,7 +65,8 @@
         "serviceDetails": "Specialized in diagnosing and treating nervous system disorders.",
         "doctors": {
           "name": "Dr. Sarah Davis",
-          "mobile": "+8901234567"
+          "mobile": "+8901234567",
+          "image": "path/to/doctor4.jpg"
         },
         "socialLinks": [
           {
@@ -81,7 +85,8 @@
         "serviceDetails": "Specialized in diagnosing and treating digestive system disorders.",
         "doctors": {
           "name": "Dr. Robert Johnson",
-          "mobile": "+7654321098"
+          "mobile": "+7654321098",
+          "image": "path/to/doctor5.jpg"
         },
         "socialLinks": [
           {
@@ -100,7 +105,8 @@
         "serviceDetails": "Specialized in diagnosing and treating eye disorders.",
         "doctors": {
           "name": "Dr. Jennifer Smith",
-          "mobile": "+1098765432"
+          "mobile": "+1098765432",
+          "image": "path/to/doctor6.jpg"
         },
         "socialLinks": [
           {
