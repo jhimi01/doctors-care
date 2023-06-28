@@ -15,11 +15,11 @@ const Home = () => {
    <Helmet>
     <title>Doctor Care</title>
    </Helmet>
-        <div className="hero h-[100vh]" style={{ backgroundImage: `url(${bg})` }}>
+        <div className="hero h-[100vh] mt-20 md:mt-0 md:px-0 px-3" style={{ backgroundImage: `url(${bg})` }}>
       <div className="md:hero-content">
         <div className="md:w-1/2 w-full mx-auto">
         <h4 className='md:text-2xl text-xl font-semibold text-[#565acf]'>We Provide All Health Care Solution</h4>
-        <h2 className='md:text-5xl mb-5 mt-2  text-3xl font-bold text-[#1f2278]'>Your Health Is Our Responsibilty!</h2>
+        <h2 className='md:text-6xl mb-5 mt-2  text-4xl font-bold text-[#1f2278]'>Your Health Is Our Responsibilty!</h2>
         <button className='text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c68]'>Read More</button>
         </div>
         <div className="md:w-[40%] w-full mx-auto text-black">
