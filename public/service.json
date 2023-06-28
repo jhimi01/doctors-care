@@ -1,0 +1,119 @@
+{
+    "services": [
+      {
+        "serviceName": "Cardiology",
+        "serviceDetails": "Specialized in diagnosing and treating heart diseases.",
+        "doctors": {
+          "name": "Dr. John Smith",
+          "mobile": "+1234567890"
+        },
+        "socialLinks": [
+          {
+            "platform": "Twitter",
+            "url": "https://twitter.com/hospitalcardio"
+          },
+          {
+            "platform": "Facebook",
+            "url": "https://facebook.com/hospitalcardio"
+          }
+        ],
+        "expert": true
+      },
+      {
+        "serviceName": "Orthopedics",
+        "serviceDetails": "Specialized in treating musculoskeletal conditions and injuries.",
+        "doctors": {
+          "name": "Dr. Michael Brown",
+          "mobile": "+2345678901"
+        },
+        "socialLinks": [
+          {
+            "platform": "Twitter",
+            "url": "https://twitter.com/hospitalortho"
+          },
+          {
+            "platform": "Instagram",
+            "url": "https://instagram.com/hospitalortho"
+          }
+        ],
+        "expert": false
+      },
+      {
+        "serviceName": "Dermatology",
+        "serviceDetails": "Specialized in diagnosing and treating skin conditions.",
+        "doctors": {
+          "name": "Dr. Emily Johnson",
+          "mobile": "+9876543210"
+        },
+        "socialLinks": [
+          {
+            "platform": "Twitter",
+            "url": "https://twitter.com/hospitalderma"
+          },
+          {
+            "platform": "LinkedIn",
+            "url": "https://linkedin.com/hospitalderma"
+          }
+        ],
+        "expert": true
+      },
+      {
+        "serviceName": "Neurology",
+        "serviceDetails": "Specialized in diagnosing and treating nervous system disorders.",
+        "doctors": {
+          "name": "Dr. Sarah Davis",
+          "mobile": "+8901234567"
+        },
+        "socialLinks": [
+          {
+            "platform": "Facebook",
+            "url": "https://facebook.com/hospitalneuro"
+          },
+          {
+            "platform": "Instagram",
+            "url": "https://instagram.com/hospitalneuro"
+          }
+        ],
+        "expert": true
+      },
+      {
+        "serviceName": "Gastroenterology",
+        "serviceDetails": "Specialized in diagnosing and treating digestive system disorders.",
+        "doctors": {
+          "name": "Dr. Robert Johnson",
+          "mobile": "+7654321098"
+        },
+        "socialLinks": [
+          {
+            "platform": "Twitter",
+            "url": "https://twitter.com/hospitalgastro"
+          },
+          {
+            "platform": "LinkedIn",
+            "url": "https://linkedin.com/hospitalgastro"
+          }
+        ],
+        "expert": false
+      },
+      {
+        "serviceName": "Ophthalmology",
+        "serviceDetails": "Specialized in diagnosing and treating eye disorders.",
+        "doctors": {
+          "name": "Dr. Jennifer Smith",
+          "mobile": "+1098765432"
+        },
+        "socialLinks": [
+          {
+            "platform": "Instagram",
+            "url": "https://instagram.com/hospitalophtho"
+          },
+          {
+            "platform": "Facebook",
+            "url": "https://facebook.com/hospitalophtho"
+          }
+        ],
+        "expert": true
+      }
+    ]
+  }
+  

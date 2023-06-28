@@ -16,7 +16,7 @@ const AboutUs = () => {
             src="https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=600"
           />
           <img className="w-full h-full hover:scale-125 transform transition-transform duration-300 ease-in-out" style={{borderBottomLeftRadius: '50px', borderBottomRightRadius: '50px', borderTopLeftRadius:'50px'}}
-            src="https://images.pexels.com/photos/11756843/pexels-photo-11756843.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src="https://images.pexels.com/photos/2324837/pexels-photo-2324837.jpeg?auto=compress&cs=tinysrgb&w=600"
           />
           <img className="w-full h-full hover:scale-125 transform transition-transform duration-300 ease-in-out" style={{borderBottomRightRadius: '50px', borderTopLeftRadius:'50px', borderTopRightRadius:'50px' }}
             src="https://images.pexels.com/photos/3279209/pexels-photo-3279209.jpeg?auto=compress&cs=tinysrgb&w=600"
