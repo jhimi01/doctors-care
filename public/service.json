@@ -119,6 +119,63 @@
           }
         ],
         "expert": true
+      }, {
+        "serviceName": "Chiropractor",
+        "serviceDetails": "Specialized in diagnosing and treating heart diseases.",
+        "doctors": {
+          "name": "Dr. Addition Smith",
+          "mobile": "+1234567890",
+          "image": "path/to/doctor1.jpg"
+        },
+        "socialLinks": [
+          {
+            "platform": "Twitter",
+            "url": "https://twitter.com/hospitalcardio"
+          },
+          {
+            "platform": "Facebook",
+            "url": "https://facebook.com/hospitalcardio"
+          }
+        ],
+        "expert": true
+      }, {
+        "serviceName": "Dentist",
+        "serviceDetails": "Specialized in diagnosing and treating heart diseases.",
+        "doctors": {
+          "name": "Dr. Mahfuz Riad",
+          "mobile": "+1234567890",
+          "image": "path/to/doctor1.jpg"
+        },
+        "socialLinks": [
+          {
+            "platform": "Twitter",
+            "url": "https://twitter.com/hospitalcardio"
+          },
+          {
+            "platform": "Facebook",
+            "url": "https://facebook.com/hospitalcardio"
+          }
+        ],
+        "expert": true
+      },{
+        "serviceName": "Cardiologist",
+        "serviceDetails": "Specialized in diagnosing and treating heart diseases.",
+        "doctors": {
+          "name": "Dr. David Benjamin",
+          "mobile": "+1234567890",
+          "image": "path/to/doctor1.jpg"
+        },
+        "socialLinks": [
+          {
+            "platform": "Twitter",
+            "url": "https://twitter.com/hospitalcardio"
+          },
+          {
+            "platform": "Facebook",
+            "url": "https://facebook.com/hospitalcardio"
+          }
+        ],
+        "expert": true
       }
     ]
   }
