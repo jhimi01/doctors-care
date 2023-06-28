@@ -6,6 +6,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../providers/AuthProvider';
 import { key } from 'localforage';
+import Swal from 'sweetalert2';
 
 const Signup = () => {
     const { register, handleSubmit, watch, formState: { errors }, reset  } = useForm();
@@ -21,31 +22,67 @@ const Signup = () => {
         const formData = new FormData();
         formData.append('image', image[0]);
         // make a post request to Imgbb api
+        const url = `https://api.imgbb.com/1/upload?key=${
+      import.meta.env.VITE_IMGBB_API_KEY
+    }`
         try{
-          const response = await fetch('https://api.imgbb.com/1/upload', {
+          const response = await fetch(url, {
             method: 'POST',
             body: formData,
-            headers: {
-              key: import.meta.env.VITE_IMGBB_API_KEY,
-            }
           })
           const result = await response.json();
+
+          // extract the image url from the response
+          const imageUrl = result?.data?.display_url;
+          // handle user registration with image url
+          signupEmail(email, password)
+          .then(result => {
+              const userlogin = result.user;
+              console.log(userlogin)
+              updateUserProfile(name, imageUrl)
+              .then(()=>{
+                Swal.fire({
+                  position: 'top-end',
+                  icon: 'success',
+                  title: 'Your work has been saved',
+                  showConfirmButton: false,
+                  timer: 1500
+                })
+                navigate(from, { replace: true });
+              }).catch(err => {
+                console.log(err.message);
+                toast.error(err.message);
+              })
+              setError('')
+              reset()
+          }).catch(err => {
+              setError(err.message)
+              Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: `${err?.message}`,
+                showConfirmButton: false,
+                timer: 1500
+              })
+          })
+
+
+
+
         }catch (error) {
           setLoading(false);
           console.log(error.message);
-          toast.error(error.message);
+          Swal.fire({
+            position: 'top-end',
+            icon: 'error',
+            title: `${error?.message}`,
+            showConfirmButton: false,
+            timer: 1500
+          })
         }
         
 
-        signupEmail(email, password)
-        .then(result => {
-            const userlogin = result.user;
-            console.log(userlogin)
-            setError('')
-            reset()
-        }).catch(err => {
-            setError(err.message)
-        })
+       
     };
 
     const handleGoogle =()=>{
