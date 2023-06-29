@@ -7,6 +7,7 @@ import prop1 from '../../assets/Props/prop1.png'
 import prop10 from '../../assets/Props/prop10.png'
 import './Home.css'
 import Process from '../Proccess/Process';
+import Doctors from '../Doctors/Doctors';
 
 const Home = () => {
   return (
@@ -35,6 +36,8 @@ const Home = () => {
     <AboutUs></AboutUs>
 
     <Process></Process>
+
+    <Doctors></Doctors>
    </>
   );
 };
