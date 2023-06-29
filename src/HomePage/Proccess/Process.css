@@ -11,7 +11,7 @@
 .hoverEffect {
     position: relative;
     overflow: hidden;
-    box-shadow: 15px 15px 30px 0px #f56918c5;
+    /* box-shadow: 15px 15px 30px 0px #f56918c5; */
     z-index: 1;
   }
   .hoverEffect::after{
