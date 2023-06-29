@@ -18,17 +18,17 @@ SwiperCore.use([FreeMode, Pagination, Autoplay]); // Enable required Swiper modu
 
 
 const Doctors = () => {
-    const [doctors, setDoctors] = useState([])
+    const [alldoctors, setAllDoctors] = useState([])
 
     useEffect(()=>{
         fetch('service.json')
         .then(res => res.json())
         .then(data => {
             console.log(data)
-            setDoctors(data)
+            setAllDoctors(data)
         })
     },[])
-console.log(doctors)
+
 
     return (
         <div className='md:flex hero h-[100vh] px-3 md:px-14' style={{ backgroundImage: `url(${sliderbg})` }}>
@@ -64,12 +64,12 @@ console.log(doctors)
       >
       
       <div>
-        {doctors.map((doctor,index) =>  
+        {alldoctors.map((doctor,index) =>  
         <SwiperSlide key={index}>
         <div className='cursor-grab border group hoverEffect rounded-lg flex items-center px-3 py-8 space-y-1 flex-col'>
-        <img className='h-[200px] w-full object-cover' src="https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+        <img className='h-[200px] w-full object-cover' src={doctor?.doctors?.image} alt="" />
             <h1 className="textBorder text-2xl font-bold group-hover:text-white">{doctor?.doctors?.name}</h1>
-                <h2 className='font-bold text-2xl text-[#f17732] group-hover:text-white'>{doctor?.serviceName}</h2>
+                <h2 className='font-bold text-xl text-[#f17732] group-hover:text-white'>{doctor?.serviceName}</h2>
                 <p className='text-gray-600 text-lg'>It is a long established fact that a reader will be distracted by the readable content of.</p>
             </div></SwiperSlide>)}
       </div>

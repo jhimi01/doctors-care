@@ -105,7 +105,7 @@
         "doctors": {
           "name": "Dr. Jennifer Smith",
           "mobile": "+1098765432",
-          "image": "path/to/doctor6.jpg"
+          "image": "https://i.ibb.co/M5hNrHD/meditad.jpg"
         },
         "socialLinks": [
           {
