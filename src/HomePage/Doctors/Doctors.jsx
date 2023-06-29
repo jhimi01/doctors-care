@@ -31,7 +31,7 @@ const Doctors = () => {
 
 
     return (
-        <div className='md:flex hero h-[100vh] px-3 md:px-14' style={{ backgroundImage: `url(${sliderbg})` }}>
+        <div className='md:flex md:hero md:h-[80vh] px-3 md:px-14' style={{ backgroundImage: `url(${sliderbg})` }}>
 
           <div className='md:w-4/5 w-full'>
           <h4 className="text-[#f59a66] text-xl font-bold">Doctors</h4>
@@ -46,7 +46,6 @@ const Doctors = () => {
 
           <div className='md:w-2/3 w-full'>
           <Swiper
-        slidesPerView={3}
           spaceBetween={30}
           freeMode={true}
           pagination={{
@@ -60,8 +59,21 @@ const Doctors = () => {
           }}
           effect="slide" // Set effect to 'slide'
           speed={1000} // Set the speed of slide transition (in milliseconds)
-   
-      >
+          breakpoints={{
+            // When window width is >= 768px
+            768: {
+              slidesPerView: 3,
+            },
+            // When window width is >= 480px
+            480: {
+              slidesPerView: 2,
+            },
+            // When window width is >= 320px
+            320: {
+              slidesPerView: 1,
+            },
+          }}
+        >
       
       <div>
         {alldoctors.map((doctor,index) =>  
