@@ -33,7 +33,7 @@ const Doctors = () => {
     return (
         <div className='md:flex md:hero md:h-[80vh] px-3 md:px-14' style={{ backgroundImage: `url(${sliderbg})` }}>
 
-          <div className='md:w-4/5 w-full'>
+          <div className='md:w-4/5 w-full space-y-2'>
           <h4 className="text-[#f59a66] text-xl font-bold">Doctors</h4>
           <h2 className="text-4xl font-bold text-[#1f2278]">
             Long Experienced Doctors and best treatment
@@ -42,6 +42,7 @@ const Doctors = () => {
             We provide the special tips and advice’s of heath care treatment and
             high level of best technology involve in the our hospital.
           </p>
+          <button className='text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c68]'>doctors</button>
           </div>
 
           <div className='md:w-2/3 w-full'>
