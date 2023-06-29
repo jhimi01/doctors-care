@@ -63,50 +63,18 @@ console.log(doctors)
    
       >
       
-        <SwiperSlide><div className='border group hoverEffect rounded-lg flex items-center px-5 py-8 space-y-7 flex-col'>
-            <h1 className="textBorder text-8xl font-bold group-hover:text-white">03</h1>
-                <h2 className='font-bold text-2xl text-[#f17732] group-hover:text-white'>Registration</h2>
+      <div>
+        {doctors.map((doctor,index) =>  
+        <SwiperSlide key={index}>
+        <div className='cursor-grab border group hoverEffect rounded-lg flex items-center px-3 py-8 space-y-1 flex-col'>
+        <img className='h-[200px] w-full object-cover' src="https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+            <h1 className="textBorder text-2xl font-bold group-hover:text-white">{doctor?.doctors?.name}</h1>
+                <h2 className='font-bold text-2xl text-[#f17732] group-hover:text-white'>{doctor?.serviceName}</h2>
                 <p className='text-gray-600 text-lg'>It is a long established fact that a reader will be distracted by the readable content of.</p>
-                <button className='text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c68]'>Read More</button>
-            </div></SwiperSlide>
-        <SwiperSlide><div className='border group hoverEffect rounded-lg flex items-center px-5 py-8 space-y-7 flex-col'>
-            <h1 className="textBorder text-8xl font-bold group-hover:text-white">03</h1>
-                <h2 className='font-bold text-2xl text-[#f17732] group-hover:text-white'>Registration</h2>
-                <p className='text-gray-600 text-lg'>It is a long established fact that a reader will be distracted by the readable content of.</p>
-                <button className='text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c68]'>Read More</button>
-            </div></SwiperSlide>
-        <SwiperSlide>
-        <div className='border group hoverEffect rounded-lg flex items-center px-5 py-8 space-y-7 flex-col'>
-            <h1 className="textBorder text-8xl font-bold group-hover:text-white">03</h1>
-                <h2 className='font-bold text-2xl text-[#f17732] group-hover:text-white'>Registration</h2>
-                <p className='text-gray-600 text-lg'>It is a long established fact that a reader will be distracted by the readable content of.</p>
-                <button className='text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c68]'>Read More</button>
-            </div>
-            </SwiperSlide>
-        <SwiperSlide>
-        <div className='border group hoverEffect rounded-lg flex items-center px-5 py-8 space-y-7 flex-col'>
-            <h1 className="textBorder text-8xl font-bold group-hover:text-white">03</h1>
-                <h2 className='font-bold text-2xl text-[#f17732] group-hover:text-white'>Registration</h2>
-                <p className='text-gray-600 text-lg'>It is a long established fact that a reader will be distracted by the readable content of.</p>
-                <button className='text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c68]'>Read More</button>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='border group hoverEffect rounded-lg flex items-center px-5 py-8 space-y-7 flex-col'>
-            <h1 className="textBorder text-8xl font-bold group-hover:text-white">03</h1>
-                <h2 className='font-bold text-2xl text-[#f17732] group-hover:text-white'>Registration</h2>
-                <p className='text-gray-600 text-lg'>It is a long established fact that a reader will be distracted by the readable content of.</p>
-                <button className='text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c68]'>Read More</button>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='border group hoverEffect rounded-lg flex items-center px-5 py-8 space-y-7 flex-col'>
-            <h1 className="textBorder text-8xl font-bold group-hover:text-white">03</h1>
-                <h2 className='font-bold text-2xl text-[#f17732] group-hover:text-white'>Registration</h2>
-                <p className='text-gray-600 text-lg'>It is a long established fact that a reader will be distracted by the readable content of.</p>
-                <button className='text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c68]'>Read More</button>
-            </div>
-        </SwiperSlide>
+            </div></SwiperSlide>)}
+      </div>
+       
+       
         
       </Swiper>
           </div>
