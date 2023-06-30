@@ -1,0 +1,51 @@
+[
+    {
+      "doctorName": "Dr. John Smith",
+      "doctorImg": "https://example.com/doctors/john-smith.jpg",
+      "doctorPhoneNumber": "+1234567890",
+      "doctorFee": 150,
+      "daysOpen": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "disease": "Cardiology"
+    },
+    {
+      "doctorName": "Dr. Emily Johnson",
+      "doctorImg": "https://example.com/doctors/emily-johnson.jpg",
+      "doctorPhoneNumber": "+9876543210",
+      "doctorFee": 200,
+      "daysOpen": ["Monday", "Tuesday", "Thursday", "Friday"],
+      "disease": "Dermatology"
+    },
+    {
+      "doctorName": "Dr. Michael Brown",
+      "doctorImg": "https://example.com/doctors/michael-brown.jpg",
+      "doctorPhoneNumber": "+5555555555",
+      "doctorFee": 180,
+      "daysOpen": ["Monday", "Wednesday", "Friday"],
+      "disease": "Orthopedics"
+    },
+    {
+      "doctorName": "Dr. Sarah Davis",
+      "doctorImg": "https://example.com/doctors/sarah-davis.jpg",
+      "doctorPhoneNumber": "+1111111111",
+      "doctorFee": 175,
+      "daysOpen": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+      "disease": "Pediatrics"
+    },
+    {
+      "doctorName": "Dr. Robert Johnson",
+      "doctorImg": "https://example.com/doctors/robert-johnson.jpg",
+      "doctorPhoneNumber": "+2222222222",
+      "doctorFee": 190,
+      "daysOpen": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+      "disease": "Neurology"
+    },
+    {
+      "doctorName": "Dr. Olivia Wilson",
+      "doctorImg": "https://example.com/doctors/olivia-wilson.jpg",
+      "doctorPhoneNumber": "+3333333333",
+      "doctorFee": 160,
+      "daysOpen": ["Monday", "Tuesday", "Thursday", "Friday"],
+      "disease": "Gynecology"
+    }
+  ]
+  
