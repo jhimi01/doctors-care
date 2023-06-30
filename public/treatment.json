@@ -18,7 +18,7 @@
     {
       "doctorName": "Dr. Michael Brown",
       "doctorImg": "https://example.com/doctors/michael-brown.jpg",
-      "doctorPhoneNumber": "+5555555555",
+      "doctorPhoneNumber": "+567237678975",
       "doctorFee": 180,
       "daysOpen": ["Monday", "Wednesday", "Friday"],
       "disease": "Orthopedics"
@@ -26,7 +26,7 @@
     {
       "doctorName": "Dr. Sarah Davis",
       "doctorImg": "https://example.com/doctors/sarah-davis.jpg",
-      "doctorPhoneNumber": "+1111111111",
+      "doctorPhoneNumber": "+74656746551",
       "doctorFee": 175,
       "daysOpen": ["Monday", "Tuesday", "Wednesday", "Thursday"],
       "disease": "Pediatrics"
@@ -34,7 +34,7 @@
     {
       "doctorName": "Dr. Robert Johnson",
       "doctorImg": "https://example.com/doctors/robert-johnson.jpg",
-      "doctorPhoneNumber": "+2222222222",
+      "doctorPhoneNumber": "+256834525767",
       "doctorFee": 190,
       "daysOpen": ["Tuesday", "Wednesday", "Thursday", "Friday"],
       "disease": "Neurology"
@@ -42,7 +42,7 @@
     {
       "doctorName": "Dr. Olivia Wilson",
       "doctorImg": "https://example.com/doctors/olivia-wilson.jpg",
-      "doctorPhoneNumber": "+3333333333",
+      "doctorPhoneNumber": "+346784754635",
       "doctorFee": 160,
       "daysOpen": ["Monday", "Tuesday", "Thursday", "Friday"],
       "disease": "Gynecology"
