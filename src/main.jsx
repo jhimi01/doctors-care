@@ -10,6 +10,7 @@ import Home from './HomePage/Home/Home';
 import AuthProvider from './providers/AuthProvider';
 import Login from './pages/Login/Login';
 import Signup from './pages/Singup/Signup';
+import Erronpage from './pages/Erronpage';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
     element: <Signup></Signup>},
     ],
   },
+  {
+    path: '*',
+    element: <Erronpage></Erronpage>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
