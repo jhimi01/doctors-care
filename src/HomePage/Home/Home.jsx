@@ -8,6 +8,7 @@ import prop10 from '../../assets/Props/prop10.png'
 import './Home.css'
 import Process from '../Proccess/Process';
 import Doctors from '../Doctors/Doctors';
+import ScrollTop from '../../component/share/ScrollTop';
 
 const Home = () => {
   return (
@@ -38,6 +39,8 @@ const Home = () => {
     <Process></Process>
 
     <Doctors></Doctors>
+
+    <ScrollTop></ScrollTop>
    </>
   );
 };

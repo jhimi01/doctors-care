@@ -11,6 +11,9 @@ import AuthProvider from './providers/AuthProvider';
 import Login from './pages/Login/Login';
 import Signup from './pages/Singup/Signup';
 import Erronpage from './pages/Erronpage';
+import Doctors from './HomePage/Doctors/Doctors';
+import Doctor from './pages/Doctor/DoctorRoute';
+import DoctorRoute from './pages/Doctor/DoctorRoute';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +25,10 @@ const router = createBrowserRouter([
     element: <Login></Login>},
     {path: '/signup', 
     element: <Signup></Signup>},
+    {
+      path: '/docotors',
+      element: <DoctorRoute></DoctorRoute>
+    }
     ],
   },
   {
