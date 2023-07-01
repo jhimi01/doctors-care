@@ -75,13 +75,13 @@ const Navigationbar = () => {
         </li>
       </NavLink>
       <NavLink
-        to="/appointment"
+        to="/treatments"
         className={({ isActive }) =>
           isActive ? "text-[#f59a66]" : ""
         }
       >
         <li>
-          <a>Appointment</a>
+          <a>Treatments</a>
         </li>
       </NavLink>
       <NavLink

@@ -14,6 +14,7 @@ import Erronpage from './pages/Erronpage';
 import Doctors from './HomePage/Doctors/Doctors';
 import Doctor from './pages/Doctor/DoctorRoute';
 import DoctorRoute from './pages/Doctor/DoctorRoute';
+import Treatments from './pages/Treatments/Treatments';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,9 @@ const router = createBrowserRouter([
     {
       path: '/docotors',
       element: <DoctorRoute></DoctorRoute>
+    },{
+      path: '/treatments',
+      element: <Treatments></Treatments>
     }
     ],
   },
