@@ -12,6 +12,7 @@ import sliderbg from '../../assets/sliderbg.png'
 // import required modules
 import SwiperCore,{ FreeMode, Pagination , Autoplay } from "swiper";
 import useDoctors from '../../hooks/useDoctors';
+import { Link } from 'react-router-dom';
 
 
 SwiperCore.use([FreeMode, Pagination, Autoplay]); // Enable required Swiper modules
@@ -35,7 +36,7 @@ const Doctors = () => {
             We provide the special tips and advice’s of heath care treatment and
             high level of best technology involve in the our hospital.
           </p>
-          <button className='text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c68]'>doctors</button>
+         <Link to='/docotors'> <button className='text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c68]'>doctors</button></Link>
           </div>
 
           <div className='md:w-2/3 w-full'>
@@ -70,7 +71,7 @@ const Doctors = () => {
         >
       
       <div>
-        {alldoctors.map((doctor,index) =>  
+        {alldoctors.slice(0, 8).map((doctor,index) =>  
         <SwiperSlide key={index}>
         <div className='cursor-grab border group hoverEffect rounded-lg flex items-center px-3 py-8 space-y-1 flex-col'>
         <img className='h-[200px] w-full object-cover' src={doctor?.doctors?.image} alt="" />

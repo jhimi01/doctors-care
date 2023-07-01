@@ -14,6 +14,7 @@ const Treatments = () => {
    </Helmet>
    <ShareTitle title={'treatments'}></ShareTitle>
    <h2>{allTreatments?.length}</h2>
+   
         </div>
     );
 };
