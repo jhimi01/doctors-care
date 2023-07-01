@@ -1,14 +1,31 @@
 import { Helmet } from "react-helmet";
 import ShareTitle from "../../component/share/ShareTitle/ShareTitle";
+import useDoctors from "../../hooks/useDoctors";
 
 const DoctorRoute = () => {
+    const {alldoctors} = useDoctors()
+
     return (
         <div>
          <Helmet>
     <title>doctors | Doctor Care</title>
    </Helmet>
-            <ShareTitle title={'docotors'}></ShareTitle>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate itaque explicabo ad nemo beatae odio repudiandae laborum aperiam sunt animi earum provident, tempore quia maxime quas quis nam! Doloribus beatae quibusdam, enim labore illo ipsa ea saepe laudantium? Et consequatur cupiditate commodi facere amet odio! Dolores nobis, impedit pariatur sunt cumque cum fuga sit repudiandae dolore similique provident eaque nihil maiores sint, optio perspiciatis ea architecto ipsa iusto dolorum molestiae. Saepe nemo natus eius enim dolorum itaque quaerat voluptatibus? Dicta, error nam! Ullam, nihil voluptas quasi tempore deleniti eum natus quaerat optio neque. Iusto, quisquam? Quos labore nulla veritatis sit!</h4>
+            <ShareTitle title={'our docotors'}></ShareTitle>
+           <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-5 w-full md:w-11/12 mt-10 mx-auto">
+              {alldoctors?.map((alldoctor, index) =>  <div key={index} className="card w-full bg-base-100 shadow-xl hoverEffect group">
+  <figure className="px-5 pt-5">
+    <img src={alldoctor?.doctors?.image} alt="Shoes" className="rounded-xl h-[250px] w-full object-cover" />
+  </figure>
+  <div className="card-body items-center text-center group-hover:text-white">
+    <h2 className="card-title text-2xl">{alldoctor?.doctors?.name}</h2>
+    <p className="text-xl">Specialist: {alldoctor?.serviceName}</p>
+    <div className="card-actions">
+    <button className='text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c6800]'>Detail</button>
+    </div>
+  </div>
+</div>)}
+             
+           </div>
         </div>
     );
 };
