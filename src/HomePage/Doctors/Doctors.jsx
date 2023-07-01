@@ -11,6 +11,7 @@ import sliderbg from '../../assets/sliderbg.png'
 
 // import required modules
 import SwiperCore,{ FreeMode, Pagination , Autoplay } from "swiper";
+import useDoctors from '../../hooks/useDoctors';
 
 
 SwiperCore.use([FreeMode, Pagination, Autoplay]); // Enable required Swiper modules
@@ -18,16 +19,8 @@ SwiperCore.use([FreeMode, Pagination, Autoplay]); // Enable required Swiper modu
 
 
 const Doctors = () => {
-    const [alldoctors, setAllDoctors] = useState([])
 
-    useEffect(()=>{
-        fetch('service.json')
-        .then(res => res.json())
-        .then(data => {
-            console.log(data)
-            setAllDoctors(data)
-        })
-    },[])
+    const {alldoctors} = useDoctors();
 
 
     return (
