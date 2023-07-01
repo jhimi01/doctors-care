@@ -64,9 +64,9 @@ const DoctorRoute = () => {
             <figure className="px-5 pt-5">
               <img src={alldoctor?.doctors?.image} alt="Shoes" className="rounded-xl h-[250px] w-full object-cover" />
             </figure>
-            <div className="card-body items-center text-center group-hover:text-white">
-              <h2 className="card-title text-2xl">{alldoctor?.doctors?.name}</h2>
-              <p className="text-xl">Specialist: {alldoctor?.serviceName}</p>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title text-[#f17732] text-2xl group-hover:text-white">{alldoctor?.doctors?.name}</h2>
+              <p className="text-xl text-[#ce7541] group-hover:text-white">Specialist: {alldoctor?.serviceName}</p>
               <div className="card-actions">
                 <button onClick={() => openModal(alldoctor)} className="text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c6800]">Detail</button>
               </div>
@@ -76,7 +76,7 @@ const DoctorRoute = () => {
       </div>
       <dialog id="my_modal_2" className="modal">
   <form method="dialog" className="modal-box bg-rose-50">
-    <h3 className="doctorname font-bold text-xl"></h3>
+    <h3 className="doctorname font-bold text-xl text-[#f17732]"></h3>
     <p className="font-normal text-lg doctor-specialty"></p>
     <p className="font-normal text-lg doctor-details"></p>
     <p className="font-normal text-lg doctor-mobile"></p>
