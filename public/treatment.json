@@ -2,7 +2,7 @@
   {
     "doctorName": "Dr. John Smith",
     "doctorImg": "https://example.com/doctors/john-smith.jpg",
-    "serviceImg": "https://example.com/doctors/john-smith.jpg",
+    "serviceImg": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3BlcmF0aW9ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
     "doctorPhoneNumber": "+1234567890",
     "doctorFee": 150,
     "daysOpen": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -12,7 +12,7 @@
   {
     "doctorName": "Dr. Emily Johnson",
     "doctorImg": "https://example.com/doctors/emily-johnson.jpg",
-    "serviceImg": "https://example.com/doctors/emily-johnson.jpg",
+    "serviceImg": "https://plus.unsplash.com/premium_photo-1661281326838-719485686172?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG9wZXJhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
     "doctorPhoneNumber": "+9876543210",
     "doctorFee": 200,
     "daysOpen": ["Monday", "Tuesday", "Thursday", "Friday"],
@@ -22,7 +22,7 @@
   {
     "doctorName": "Dr. Michael Brown",
     "doctorImg": "https://example.com/doctors/michael-brown.jpg",
-    "serviceImg": "https://example.com/doctors/michael-brown.jpg",
+    "serviceImg": "https://images.unsplash.com/photo-1514416205405-075ab2f15964?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG9wZXJhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
     "doctorPhoneNumber": "+567237678975",
     "doctorFee": 180,
     "daysOpen": ["Monday", "Wednesday", "Friday"],
@@ -32,7 +32,7 @@
   {
     "doctorName": "Dr. Sarah Davis",
     "doctorImg": "https://example.com/doctors/sarah-davis.jpg",
-    "serviceImg": "https://example.com/doctors/robert-johnson.jpg",
+    "serviceImg": "https://plus.unsplash.com/premium_photo-1661274071510-c54d63a5f267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG9wZXJhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
     "doctorPhoneNumber": "+74656746551",
     "doctorFee": 175,
     "daysOpen": ["Monday", "Tuesday", "Wednesday", "Thursday"],
@@ -42,7 +42,7 @@
   {
     "doctorName": "Dr. Robert Johnson",
     "doctorImg": "https://example.com/doctors/robert-johnson.jpg",
-    "serviceImg": "https://example.com/doctors/robert-johnson.jpg",
+    "serviceImg": "https://plus.unsplash.com/premium_photo-1678310819897-edfe9b9def64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1lZGljYWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
     "doctorPhoneNumber": "+256834525767",
     "doctorFee": 190,
     "daysOpen": ["Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -52,7 +52,7 @@
   {
     "doctorName": "Dr. Olivia Wilson",
     "doctorImg": "https://example.com/doctors/olivia-wilson.jpg",
-    "serviceImg": "https://example.com/doctors/olivia-wilson.jpg",
+    "serviceImg": "https://plus.unsplash.com/premium_photo-1663013467272-f0ca0edf1961?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGhvc3BpdGFsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
     "doctorPhoneNumber": "+346784754635",
     "doctorFee": 160,
     "daysOpen": ["Monday", "Tuesday", "Thursday", "Friday"],

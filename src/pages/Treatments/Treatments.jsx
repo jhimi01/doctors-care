@@ -41,10 +41,10 @@ const Treatments = () => {
         </button>
       </div>
 
-<div className='grid md:grid-cols-3 lg:grid-cols-4 grid-cols-1 gap-5'>
+<div className='grid md:grid-cols-3 lg:grid-cols-4 grid-cols-1 gap-5 md:w-11/12 mt-5 mx-auto'>
 {
     filteredTreatments?.map((treatments, index) => <div key={index} className="card bg-base-100 shadow-xl">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+  <figure><img src={treatments?.serviceImg} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title">{treatments?.doctorName}</h2>
     <p>{treatments?.serviceName}</p>
