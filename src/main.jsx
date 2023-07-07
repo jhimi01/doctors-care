@@ -16,6 +16,7 @@ import Doctor from './pages/Doctor/DoctorRoute';
 import DoctorRoute from './pages/Doctor/DoctorRoute';
 import Treatments from './pages/Treatments/Treatments';
 import { Lines } from 'react-preloaders';
+import PricateRoute from './routes/PricateRoute';
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
     element: <Signup></Signup>},
     {
       path: '/docotors',
-      element: <DoctorRoute></DoctorRoute>
+      element: <PricateRoute><DoctorRoute></DoctorRoute></PricateRoute>
     },{
       path: '/treatments',
       element: <Treatments></Treatments>

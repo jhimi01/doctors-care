@@ -7,7 +7,6 @@ import { FcSearch } from "react-icons/fc";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Link } from "react-router-dom";
-import PricateRoute from "../../routes/PricateRoute";
 
 const DoctorRoute = () => {
   const { alldoctors } = useDoctors();
@@ -102,7 +101,7 @@ const DoctorRoute = () => {
                 {alldoctor?.doctors?.name}
               </h2>
               <p className="text-xl text-[#ce7541] group-hover:text-white">Specialist: {alldoctor?.serviceName}</p>
-              <PricateRoute><div className="card-actions">
+              <div className="card-actions">
                 {user ? <button
                   onClick={() => openModal(alldoctor)}
                   className="text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c6800]"
@@ -114,7 +113,7 @@ const DoctorRoute = () => {
                 >
                   Detail
                 </button></Link>}
-              </div></PricateRoute>
+              </div>
             </div>
           </div>
         ))}
