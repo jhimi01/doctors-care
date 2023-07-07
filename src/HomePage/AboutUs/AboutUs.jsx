@@ -10,7 +10,7 @@ import { GiMedicines } from 'react-icons/gi';
 const AboutUs = () => {
   return (
     <div className="relative px-3 md:px-20 mx-auto md:my-28">
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
+      <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-5">
         <div className="grid grid-cols-2 gap-5">
           <img className="w-full h-full hover:scale-110 transform transition-transform duration-200 ease-in-out" style={{borderBottomLeftRadius: '50px', borderBottomRightRadius: '50px', borderTopRightRadius:'50px'}}
             src="https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -36,12 +36,12 @@ const AboutUs = () => {
             high level of best technology involve in the our hospital.
           </p>
           <div className="grid grid-cols-2 gap-5">
-            <div className="md:flex items-center gap-3 text-2xl p-3 bg-indigo-100 drop-shadow-lg shake-effect"><BiInjection className="text-red-500" /> <p>Best Professionals</p></div>
-            <div className="md:flex items-center gap-3 text-2xl p-3 bg-indigo-100 drop-shadow-lg shake-effect"><FaAmbulance className="text-blue-400" /> <p>Emergency Help</p></div>
-            <div className="md:flex items-center gap-3 drop-shadow-lg text-2xl p-3 bg-indigo-100 shake-effect">
-            <GiDoctorFace className="text-indigo-600 text-2xl" />
+            <div className="md:flex items-center gap-3 font-medium text-xl p-3 bg-indigo-100 drop-shadow-lg shake-effect"><BiInjection className="text-red-500" /> <p>Best Professionals</p></div>
+            <div className="md:flex items-center gap-3 text-xl p-3 bg-indigo-100 drop-shadow-lg shake-effect font-medium"><FaAmbulance className="text-blue-400" /> <p>Emergency Help</p></div>
+            <div className="md:flex items-center gap-3 drop-shadow-lg text-xl font-medium p-3 bg-indigo-100 shake-effect">
+            <GiDoctorFace className="text-indigo-600 text-xl" />
              <p>Qualified Doctors</p></div>
-            <div className="md:flex items-center gap-3 text-2xl p-3 bg-indigo-100 drop-shadow-lg shake-effect"><GiMedicines className="text-red-300" /> <p>Medical Treatment</p></div>
+            <div className="md:flex items-center gap-3 font-medium text-xl p-3 bg-indigo-100 drop-shadow-lg shake-effect"><GiMedicines className="text-red-300" /> <p>Medical Treatment</p></div>
           </div>
           <button className='text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c68]'>Read More</button>
         </div>

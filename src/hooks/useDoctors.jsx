@@ -8,7 +8,7 @@ const useDoctors = () => {
         fetch('service.json')
         .then(res => res.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
             setAllDoctors(data)
             setLoading(false)
         })

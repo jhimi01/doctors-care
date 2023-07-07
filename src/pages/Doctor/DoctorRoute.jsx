@@ -4,11 +4,15 @@ import useDoctors from "../../hooks/useDoctors";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { AiFillPhone } from "react-icons/ai";
 import { FcSearch } from "react-icons/fc";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
+import { Link } from "react-router-dom";
+import PricateRoute from "../../routes/PricateRoute";
 
 const DoctorRoute = () => {
   const { alldoctors } = useDoctors();
   const [search, setSearch] = useState("");
+  const { user } = useContext(AuthContext)
 
   const openModal = (doctor) => {
     const modal = document.getElementById("my_modal_2");
@@ -98,14 +102,19 @@ const DoctorRoute = () => {
                 {alldoctor?.doctors?.name}
               </h2>
               <p className="text-xl text-[#ce7541] group-hover:text-white">Specialist: {alldoctor?.serviceName}</p>
-              <div className="card-actions">
-                <button
+              <PricateRoute><div className="card-actions">
+                {user ? <button
                   onClick={() => openModal(alldoctor)}
                   className="text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c6800]"
                 >
                   Detail
-                </button>
-              </div>
+                </button> : <Link to='/login'><button
+                  onClick={() => openModal(alldoctor)}
+                  className="text-xl btn rounded-md bg-[#f17732] text-white hover:bg-[#e08c6800]"
+                >
+                  Detail
+                </button></Link>}
+              </div></PricateRoute>
             </div>
           </div>
         ))}

@@ -1,23 +1,36 @@
 import React, { useContext, useState } from 'react';
 import loginsvg from '../../../public/login.svg'
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { FcGoogle } from 'react-icons/fc';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../providers/AuthProvider';
+import Swal from 'sweetalert2';
 
 
 const Login = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const { loginWithEmail, logingoogle } = useContext(AuthContext)
     const [error, setError] = useState('')
+    let navigate = useNavigate();
+    let location = useLocation();
+    let from = location.state?.from?.pathname || "/";
+    console.log(location)
 
     const onSubmit = data => {
-        console.log(data.email)
-        loginWithEmail(data.email, data.password)
+        // console.log(data.email)
+        loginWithEmail(data?.email, data?.password)
         .then(result => {
             const userlogin = result.user;
             console.log(userlogin)
+            Swal.fire({
+              position: 'top-end',
+              icon: 'success',
+              title: 'Successfully logged in',
+              showConfirmButton: false,
+              timer: 1500
+            })
+            navigate(from, { replace: true });
             setError('')
         }).catch(err => {
             setError(err.message)
@@ -27,9 +40,17 @@ const Login = () => {
     const handleGoogle =()=>{
         logingoogle()
         .then(result => {
-            const userlogin = result.user;
-            console.log(userlogin)
+            const userlogin = result?.user;
+            // console.log(userlogin)
             setError('')
+            Swal.fire({
+              position: 'top-end',
+              icon: 'success',
+              title: 'Successfully logged in',
+              showConfirmButton: false,
+              timer: 1500
+            })
+            navigate(from, { replace: true });
         }).catch(err => {
             setError(err.message)
         })
@@ -46,6 +67,7 @@ const Login = () => {
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
            
            <form onSubmit={handleSubmit(onSubmit)} className="card-body pb-0">
+           <h1 className='text-4xl font-semibold'>Please Login</h1>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>

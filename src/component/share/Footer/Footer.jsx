@@ -2,7 +2,7 @@ import bg from '../../../assets/bgbannner.png';
 const Footer = () => {
     return (
         <div >
-          <footer className="footer p-10" style={{ backgroundImage: `url(${bg})` }}>
+          <footer className="footer md:pt-14 p-10" style={{ backgroundImage: `url(${bg})` }}>
   <div>
     <span className="footer-title">Services</span> 
     <a className="link link-hover">Branding</a> 

@@ -7,7 +7,7 @@ import { AuthContext } from "../../../providers/AuthProvider";
 const Navigationbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const { user, logout } = useContext(AuthContext);
-  console.log(user?.photoURL);
+  // console.log(user?.photoURL);
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 0;
@@ -125,9 +125,9 @@ const Navigationbar = () => {
               <Navigation />
             </ul>
           </div>
-          <a className="text-2xl flex items-center gap-2 font-bold text-[#1f2278]">
+       <Link to='/'>  <a className="text-2xl flex items-center gap-2 font-bold text-[#1f2278]">
             <FaStethoscope className="text-3xl" /> DoctorCare
-          </a>
+          </a></Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-bold text-[#6163a1]">

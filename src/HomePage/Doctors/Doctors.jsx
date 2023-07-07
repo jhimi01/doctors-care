@@ -53,7 +53,7 @@ const Doctors = () => {
             disableOnInteraction: false // Allow interaction to pause autoplay
           }}
           effect="slide" // Set effect to 'slide'
-          speed={1000} // Set the speed of slide transition (in milliseconds)
+          speed={3000} // Set the speed of slide transition (in milliseconds)
           breakpoints={{
             // When window width is >= 768px
             768: {
