@@ -12,16 +12,16 @@ const AboutUs = () => {
     <div className="relative px-3 md:px-20 mx-auto md:my-28">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
         <div className="grid grid-cols-2 gap-5">
-          <img className="w-full h-full hover:scale-125 transform transition-transform duration-300 ease-in-out" style={{borderBottomLeftRadius: '50px', borderBottomRightRadius: '50px', borderTopRightRadius:'50px'}}
+          <img className="w-full h-full hover:scale-110 transform transition-transform duration-200 ease-in-out" style={{borderBottomLeftRadius: '50px', borderBottomRightRadius: '50px', borderTopRightRadius:'50px'}}
             src="https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=600"
           />
-          <img className="w-full h-full hover:scale-125 transform transition-transform duration-300 ease-in-out" style={{borderBottomLeftRadius: '50px', borderBottomRightRadius: '50px', borderTopLeftRadius:'50px'}}
+          <img className="w-full h-full hover:scale-110 transform transition-transform duration-200 ease-in-out" style={{borderBottomLeftRadius: '50px', borderBottomRightRadius: '50px', borderTopLeftRadius:'50px'}}
             src="https://images.pexels.com/photos/2324837/pexels-photo-2324837.jpeg?auto=compress&cs=tinysrgb&w=600"
           />
-          <img className="w-full h-full hover:scale-125 transform transition-transform duration-300 ease-in-out" style={{borderBottomRightRadius: '50px', borderTopLeftRadius:'50px', borderTopRightRadius:'50px' }}
+          <img className="w-full h-full hover:scale-110 transform transition-transform duration-200 ease-in-out" style={{borderBottomRightRadius: '50px', borderTopLeftRadius:'50px', borderTopRightRadius:'50px' }}
             src="https://images.pexels.com/photos/3279209/pexels-photo-3279209.jpeg?auto=compress&cs=tinysrgb&w=600"
           />
-          <img className="w-full h-full hover:scale-125 transform transition-transform duration-300 ease-in-out" style={{ borderTopLeftRadius:'50px', borderTopRightRadius:'50px', borderBottomLeftRadius: '50px', }}
+          <img className="w-full h-full hover:scale-110 transform transition-transform duration-200 ease-in-out" style={{ borderTopLeftRadius:'50px', borderTopRightRadius:'50px', borderBottomLeftRadius: '50px', }}
             src="https://images.pexels.com/photos/3779705/pexels-photo-3779705.jpeg?auto=compress&cs=tinysrgb&w=600"
           />
         </div>
