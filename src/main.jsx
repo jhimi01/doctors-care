@@ -15,7 +15,7 @@ import Doctors from './HomePage/Doctors/Doctors';
 import Doctor from './pages/Doctor/DoctorRoute';
 import DoctorRoute from './pages/Doctor/DoctorRoute';
 import Treatments from './pages/Treatments/Treatments';
-import { Lines } from 'react-preloaders';
+// import { Lines } from 'react-preloaders';
 import PricateRoute from './routes/PricateRoute';
 
 const router = createBrowserRouter([
@@ -47,7 +47,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
   <AuthProvider>
       <RouterProvider router={router} />
-      <Lines color={'#f17732'} />
+      {/* <Lines color={'#f17732'} /> */}
   </AuthProvider>
   </React.StrictMode>,
 )
